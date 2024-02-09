@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Windlass';
+    src: url('/Projet_perso/Code/fonts/Windlass.ttf');
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* profil utilisateur */
+
+.list {
+    display: flex;
+    justify-content: end;
+    margin-right: 15vh;
+
+}
+
+.profileUser {
+    margin-top: 60px;
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: baseline;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+}
+
+#userProfilePicture {
+    display: flex;
+    justify-content: baseline;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+
+
+#currentUsername {
+    margin-top: 12px;
+    margin-left: 12px;
+    padding-bottom: 20px;
+    
+}
+
+
+/* boutons thème + langue + logo */
+/*
+.containerLogo {
+    display: flex;
+    height: 60%;
+    margin-bottom: 40px;
+    margin-left: 160px;
+
+}
+
+#logo {
+    display: flex;
+    width: 20%;
+    height: 50%;
+    
+}
+
+
+.buttonHeader {
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    margin-right: 120px;
+    
+}
+
+.buttonHeader button {
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.buttonHeader img {
+    border-radius: 20px;
+}
+*/
+
+/* jet 2 */
+
+header {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.containerButton {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.buttonHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-right: 4vh;
+    padding-bottom: 3vh;
+    padding-top: 4vh;
+}
+
+#themeButton {
+    border-radius: 20px;
+    padding: 2vh;
+}
+
+.langButton {
+    border-radius: 20px;
+
+}
+
+
+
+ /* Nav */
+
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 6px;
+    
+}
+.buttonNav {
+    border-radius: 20px;
+    border: 1px solid;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'windlass';
+}
+
+#support {
+    margin-right: 100px;
+}
+
+
+#notification {
+    margin-left: 120px;
+}
+
+
+
+
+/* POST */
+
+.containerDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.containerPost {
+    width: 50%;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 10px 5px 5px gray;
+    display: block;
+    margin-bottom: 10vh;
+    margin-top: 6vh;
+
+
+}
+
+#userPreviewImage {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.circle { 
+    height: 10px;  
+    width: 10px;
+    size-adjust: 50%;
+    border: solid 1px;
+    background-color: gray; 
+    border-radius: 50%;  
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: 2vh;
+}
+
+.textTime {
+    margin-top: 13px;
+    margin-left: 2vh;
+}
+
+.buttonAuteur {
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: #000 1px;
+    padding: 10px;
+}
+
+
+
+.post {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 10px;
+
+}
+
+.containerImage {
+    padding: 2vh;
+    padding-left: 6vh;
+    padding-right: 6vh;
+
+}
+
+.textPost {
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 2vh;
+}
+.previewImage {
+    max-height: 512px;
+    max-width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+
+    
+}
+
+
+.titlePost {
+    border: #000 1px solid;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.buttonPreview {
+    font-family: 'windlass';
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 5px;
+    border-radius: 20px;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    margin-right: 3vh;
+    margin-left: 3vh;
+    margin-bottom: 5px;
+    border: 1px solid;
+}
+
+.pictoPreview {
+    margin-right: 2vh;
+
+}
