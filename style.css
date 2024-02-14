@@ -14,7 +14,20 @@ a {
     text-decoration: none;
 }
 
+main {
+    margin-top: 10vh;
+}
 
+
+
+
+
+/* Heads */
+
+h1 {
+    font-size: 4vh;
+    font-family: 'windlass';
+}
 
 
 /* profil utilisateur */
@@ -107,24 +120,42 @@ header {
 
 }
 
+
+.containerLogo {
+    display: flex;
+}
+
+@media  (min-width:620px) {
+
+    #logo {
+        margin-right: 65vw;
+        width: 30%;
+    }
+    
+}
+
+
 .containerButton {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column-reverse;
 }
 
 .buttonHeader {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 30px;
-    padding-right: 4vh;
+    gap: 21px;
+    padding-right: 1vh;
     padding-bottom: 3vh;
-    padding-top: 4vh;
+    padding-top: 10vh;
 }
 
 #themeButton {
     border-radius: 20px;
     padding: 2vh;
+    height: 50%;
+    margin-right: 2vh;
+
 }
 
 .langButton {
