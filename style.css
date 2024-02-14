@@ -90,10 +90,18 @@ header {
     display: flex;
 }
 
+#logo {
+    max-width: 100%;
+    max-height: 100%;
+
+
+
+}
+
 @media  (min-width:620px) {
 
     #logo {
-        margin-right: 65vw;
+        margin-right: 50vh;
         width: 30%;
     }
     
@@ -198,11 +206,20 @@ input {
     margin-bottom: 2vh;
 }
 
+
+/* btn radio */
+
+
 .formRadio {
     display: flex;
     flex-direction: row;
     margin-left: 4vh;
     margin-top: 3vh;
+}
+
+.radio {
+    margin-right: 2vh;
+
 }
 
 
