@@ -80,17 +80,28 @@ h1 {
 
 header {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
 
 
 
+}
+
+
+
+
+.containerButton {
+    display: flex;
+    flex-flow: row;
 }
 
 .containerLogo {
-    display: flex;
+    display: inline-block;
+    position: relative;
+    align-items: center;
 }
 
 #logo {
+    width: fit-content;
     max-width: 100%;
     max-height: 100%;
 
@@ -105,12 +116,6 @@ header {
         width: 30%;
     }
     
-}
-
-
-.containerButton {
-    display: flex;
-    flex-flow: column-reverse;
 }
 
 .buttonHeader {
@@ -133,8 +138,15 @@ header {
 }
 
 .langButton {
+    height: fit-content;
     border-radius: 20px;
 
+}
+
+.containerLogo a {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -184,6 +196,10 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-left: 5vh;
+    margin-right: 5vh;
     
 }
 form   {
@@ -194,8 +210,8 @@ form   {
     align-items: center;
     border: none;
     outline: none;
-    border-bottom: 1px solid;
     width: fit-content;
+    
 
 }
 
@@ -204,8 +220,31 @@ input {
     border: 1px solid black;
     border-radius: 30px;
     margin-bottom: 2vh;
+    padding-left: 6vh;
+    padding-right: 6vh;
 }
 
+.container {
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.containerTitle {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid;
+    margin-left: -1vh;
+}
+
+.title {
+    width: fit-content;
+    padding-bottom: 7vh;
+    padding-top: 6vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+    
+
+}
 
 /* btn radio */
 
@@ -243,6 +282,8 @@ fieldset {
 .containerForm legend {
     margin-top: 1vh;
     margin-bottom: 2vh;
+    margin-right: 5vh;
+    padding-left: 2vh;
 
 
  }
