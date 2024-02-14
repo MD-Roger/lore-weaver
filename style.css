@@ -27,6 +27,7 @@ main {
 h1 {
     font-size: 4vh;
     font-family: 'windlass';
+    text-align: center;
 }
 
 
@@ -74,52 +75,16 @@ h1 {
 }
 
 
-/* boutons thème + langue + logo */
-/*
-.containerLogo {
-    display: flex;
-    height: 60%;
-    margin-bottom: 40px;
-    margin-left: 160px;
 
-}
-
-#logo {
-    display: flex;
-    width: 20%;
-    height: 50%;
-    
-}
-
-
-.buttonHeader {
-    display: flex;
-    justify-content: end;
-    gap: 50px;
-    margin-right: 120px;
-    
-}
-
-.buttonHeader button {
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.buttonHeader img {
-    border-radius: 20px;
-}
-*/
-
-/* jet 2 */
+/* header */
 
 header {
     display: flex;
     flex-flow: column wrap;
 
-}
 
+
+}
 
 .containerLogo {
     display: flex;
@@ -153,8 +118,9 @@ header {
 #themeButton {
     border-radius: 20px;
     padding: 2vh;
-    height: 50%;
+    height: 40%;
     margin-right: 2vh;
+    border: 1px solid;
 
 }
 
@@ -198,6 +164,105 @@ nav {
 
 
 
+
+
+
+
+/* FORM */
+
+
+.containerForm {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+form   {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    width: fit-content;
+
+}
+
+input {
+    padding: 1vh;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-bottom: 2vh;
+}
+
+.formRadio {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4vh;
+    margin-top: 3vh;
+}
+
+
+fieldset {
+    border: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3vh;
+    padding-right: 3vh;;
+    
+}
+
+.containerForm fieldset {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-right: 3vh;
+}
+.containerForm legend {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+
+
+ }
+
+ /* Bouton form */
+ .btn, .btnRedirection {
+    margin-left: 3vh;
+    padding: 1vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+ }
+ 
+.btnRedirection {
+    margin-top: 2vh;
+}
+
+button {
+    border: none;
+    background-color: white;
+ }
+
+#connect button {
+    background-color: blueviolet;
+}
+
+#connect{
+    margin-bottom: 4vh;
+    background-color: blueviolet;
+
+ }
+
+#passForgot {
+    border: none;
+
+
+ }
 
 /* POST */
 
