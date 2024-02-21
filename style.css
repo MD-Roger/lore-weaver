@@ -127,7 +127,8 @@ header {
     border-radius: 20px;
     padding: 2vh;
     height: 22%;
-    margin-right: 2vh;
+    padding-left: 3vw;
+    margin-right: 1vh;
     border: 1px solid;
 
 }
