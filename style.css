@@ -209,14 +209,14 @@ form   {
 }
 
 input {
-    padding: 1vh;
     border: 1px solid black;
     border-radius: 30px;
     margin-bottom: 1vh;
-    padding-left: 3vw;
-    padding-right: 6vh;
+    padding-right: 10vw;
     padding-bottom: 1vh;
     margin-left: 8vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
 }
 
 .container {
@@ -428,6 +428,17 @@ button {
 
 }
 
+
+
+/** FOOTER 
+*/
+
+
+.containerCopyright {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
 @media screen and (min-width:920px) {
 
     #logo {
@@ -449,12 +460,9 @@ button {
     
     }
     input {
-        padding: 1vh;
         border: 1px solid black;
         border-radius: 30px;
         margin-bottom: 1vh;
-        padding-left: 3vw;
-        padding-right: 6vh;
         padding-bottom: 1vh;
         margin-left: 2vw;
     }
