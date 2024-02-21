@@ -1,0 +1,506 @@
+@font-face {
+    font-family: 'Windlass';
+    src: url('/Projet_perso/Code/fonts/Windlass.ttf');
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin-top: 10vh;
+}
+
+
+
+
+
+/* Heads */
+
+h1 {
+    font-size: 4vh;
+    font-family: 'windlass';
+    text-align: center;
+}
+
+
+/* profil utilisateur */
+
+.list {
+    display: flex;
+    justify-content: end;
+    margin-right: 15vh;
+
+}
+
+.profileUser {
+    margin-top: 60px;
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: baseline;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+}
+
+#userProfilePicture {
+    display: flex;
+    justify-content: baseline;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+
+
+#currentUsername {
+    margin-top: 12px;
+    margin-left: 12px;
+    padding-bottom: 20px;
+    
+}
+
+
+
+/* header */
+
+header {
+    display: flex;
+    flex-flow: column;
+
+
+
+}
+
+
+
+
+.containerButton {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.containerLogo {
+    width: 50%;
+
+}
+
+#logo {
+    width: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+
+
+
+}
+
+
+
+
+
+.buttonHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 21px;
+    padding-right: 1vh;
+    padding-bottom: 3vh;
+    padding-top: 10vh;
+}
+
+#themeButton {
+    border-radius: 20px;
+    padding: 2vh;
+    height: 22%;
+    margin-right: 2vh;
+    border: 1px solid;
+
+}
+
+.langButton {
+    width: 30%;
+    height: fit-content;
+    
+
+}
+
+
+#flag {
+    width: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.containerLogo a {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+ /* Nav */
+
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 6px;
+    
+}
+.buttonNav {
+    border-radius: 20px;
+    border: 1px solid;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'windlass';
+}
+
+#support {
+    margin-right: 100px;
+}
+
+
+#notification {
+    margin-left: 120px;
+}
+
+
+
+
+
+
+
+/* FORM */
+
+
+.containerForm {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    
+}
+form   {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border: none;
+    outline: none;
+    width: fit-content;
+    
+
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-bottom: 1vh;
+    width: 60vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+    margin-left: 8vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
+
+.container {
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.containerTitle {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid;
+    margin-left: -1vh;
+}
+
+.title {
+    width: fit-content;
+    padding-bottom: 7vh;
+    padding-top: 6vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+    
+
+}
+
+fieldset {
+    border: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3vh;
+    padding-right: 3vh;;
+    
+}
+
+.containerForm fieldset {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-right: 3vh;
+}
+.containerForm legend {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 8vw;
+
+
+ }
+
+/* btn radio */
+
+
+.formRadio {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4vh;
+    margin-top: 3vh;
+}
+
+.radio {
+    margin-right: 2vh;
+
+}
+
+.formRadio input {
+    width: auto;
+}
+
+
+ /* Bouton form */
+ .btn, .btnRedirection {
+    margin-left: 3vh;
+    text-align: center;
+ }
+ 
+.btnRedirection {
+    margin-top: 2vh;
+}
+
+.btn {
+    margin-bottom: 1vh;
+}
+fieldset button {
+    border: solid 2px black;
+    border-radius: 30px;
+    background-color: white;
+    width: 40vw;
+    height: 5vh;
+
+ }
+
+#connect button {
+    background-color: blueviolet;
+}
+
+#connect{
+    margin-bottom: 4vh;
+    background-color: blueviolet;
+
+ }
+
+#passForgot {
+    border: none;
+
+
+ }
+
+
+
+/* POST */
+
+.containerDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.containerPost {
+    width: 50%;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 10px 5px 5px gray;
+    display: block;
+    margin-bottom: 10vh;
+    margin-top: 6vh;
+
+
+}
+
+#userPreviewImage {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.circle { 
+    height: 10px;  
+    width: 10px;
+    size-adjust: 50%;
+    border: solid 1px;
+    background-color: gray; 
+    border-radius: 50%;  
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: 2vh;
+}
+
+.textTime {
+    margin-top: 13px;
+    margin-left: 2vh;
+}
+
+.buttonAuteur {
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: #000 1px;
+    padding: 10px;
+}
+
+
+
+.post {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 10px;
+
+}
+
+.containerImage {
+    padding: 2vh;
+    padding-left: 6vh;
+    padding-right: 6vh;
+
+}
+
+.textPost {
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 2vh;
+}
+.previewImage {
+    max-height: 512px;
+    max-width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+
+    
+}
+
+
+.titlePost {
+    border: #000 1px solid;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.buttonPreview {
+    font-family: 'windlass';
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 5px;
+    border-radius: 20px;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    margin-right: 3vh;
+    margin-left: 3vh;
+    margin-bottom: 5px;
+    border: 1px solid;
+}
+
+.pictoPreview {
+    margin-right: 2vh;
+
+}
+
+
+
+/** FOOTER 
+*/
+
+
+.containerCopyright {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+@media screen and (min-width:920px) {
+
+    #logo {
+        size: 50%;
+        
+    }
+
+    .containerLogo {
+        width: 20%;
+
+
+    }
+    #themeButton {
+        border-radius: 20px;
+        padding: 2vh;
+        height: 10%;
+        margin-right: 2vh;
+        border: 1px solid;
+    
+    }
+    input {
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 40vw;
+        margin-bottom: 1vh;
+        padding-bottom: 1vh;
+        margin-left: 2vw;
+    }
+
+    .containerForm legend {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        margin-left: 2vw;
+    
+    
+     }
+     .langButton {
+        margin-left: 30vw;
+        width: 7%;
+
+     }
+        
+        
+    
+    }
