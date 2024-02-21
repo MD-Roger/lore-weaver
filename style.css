@@ -91,13 +91,13 @@ header {
 
 .containerButton {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 .containerLogo {
-    display: inline-block;
-    position: relative;
-    align-items: center;
+    width: 50%;
+
 }
 
 #logo {
@@ -109,14 +109,7 @@ header {
 
 }
 
-@media  (min-width:620px) {
 
-    #logo {
-        margin-right: 50vh;
-        width: 30%;
-    }
-    
-}
 
 .buttonHeader {
     display: flex;
@@ -131,7 +124,7 @@ header {
 #themeButton {
     border-radius: 20px;
     padding: 2vh;
-    height: 40%;
+    height: 22%;
     margin-right: 2vh;
     border: 1px solid;
 
@@ -219,9 +212,11 @@ input {
     padding: 1vh;
     border: 1px solid black;
     border-radius: 30px;
-    margin-bottom: 2vh;
-    padding-left: 6vh;
+    margin-bottom: 1vh;
+    padding-left: 3vw;
     padding-right: 6vh;
+    padding-bottom: 1vh;
+    margin-left: 8vw;
 }
 
 .container {
@@ -246,22 +241,6 @@ input {
 
 }
 
-/* btn radio */
-
-
-.formRadio {
-    display: flex;
-    flex-direction: row;
-    margin-left: 4vh;
-    margin-top: 3vh;
-}
-
-.radio {
-    margin-right: 2vh;
-
-}
-
-
 fieldset {
     border: none;
 }
@@ -281,12 +260,29 @@ fieldset {
 }
 .containerForm legend {
     margin-top: 1vh;
-    margin-bottom: 2vh;
-    margin-right: 5vh;
-    padding-left: 2vh;
+    margin-bottom: 1vh;
+    margin-left: 8vw;
 
 
  }
+
+/* btn radio */
+
+
+.formRadio {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4vh;
+    margin-top: 3vh;
+}
+
+.radio {
+    margin-right: 2vh;
+
+}
+
+
+
 
  /* Bouton form */
  .btn, .btnRedirection {
@@ -430,4 +426,47 @@ button {
 .pictoPreview {
     margin-right: 2vh;
 
+}
+
+@media screen and (min-width:920px) {
+
+    #logo {
+        size: 50%;
+        
+    }
+
+    .containerLogo {
+        width: 20%;
+
+
+    }
+    #themeButton {
+        border-radius: 20px;
+        padding: 2vh;
+        height: 10%;
+        margin-right: 2vh;
+        border: 1px solid;
+    
+    }
+    input {
+        padding: 1vh;
+        border: 1px solid black;
+        border-radius: 30px;
+        margin-bottom: 1vh;
+        padding-left: 3vw;
+        padding-right: 6vh;
+        padding-bottom: 1vh;
+        margin-left: 2vw;
+    }
+
+    .containerForm legend {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        margin-left: 2vw;
+    
+    
+     }
+     .langButton {
+        margin-left: 30vw;
+     }
 }
