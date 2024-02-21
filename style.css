@@ -158,34 +158,15 @@ header {
  /* Nav */
 
 
-
-nav {
+.nav {
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 6px;
-    
-}
-.buttonNav {
-    border-radius: 20px;
-    border: 1px solid;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: 'windlass';
+    justify-content: center;
 }
 
-#support {
-    margin-right: 100px;
+.nav ul {
+    list-style : none;
 }
-
-
-#notification {
-    margin-left: 120px;
-}
-
 
 
 

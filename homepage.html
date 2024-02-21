@@ -8,29 +8,50 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="buttonHeader">
-            <button type="button" id="themeButton">Thème</button>
-            <a href=""></a>
-            <img src="https://placehold.co/100x50" alt="">
-        </div>
-        <div class="containerLogo">
-             <img src="https://placehold.co/300x200" alt="" id="logo">
-        
+        <div class="containerButton">
+            <div class="buttonHeader">
+             
+                    <a href="" class="containerLogo">
+                        <img src="./assets/ImAT.jpg" alt="" id="logo">
+                    </a>
+                
+                
+                <a class="langButton" href="">
+                    <img class="" id="flag" src="./assets/union-jack-26119_640.png" alt="">
+                </a>
+                <button type="button" id="themeButton">Theme</button>
+            </div>
         </div>
         <div class="nav">
             <nav>
-                <button class="buttonNav" type="button" id="support" name="support">Support</button>
-                <button class="buttonNav" type="button" id="creation" name="creation">Creations</button>
-                <button class="buttonNav" type="button" id="outils" name="outils">Outils</button>
-                <button class="buttonNav" type="button" id="parcourir" name="parcourir">Parcourir</button>
-                <button class="buttonNav" type="button" id="messagerie" name="messagerie">Messagerie</button>
-                <a href=""></a>
-                <img src="assets/notification.svg" alt="Notifications">
-                <button class="buttonNav" type="button" id="connexion" name="connexion">Connexion/Inscription</button>
+                <ul>
+                    <li id="responsive">
+                        <span id="nav-show" data-target=".collapse"><i class="fa-solid fa-bars"></i></span>
+                        <span id="nav-hide" class="hide" data-target=".collapse"> <i class="fa-solid fa-xmark"></i> </span>
+    
+                    </li>
+                    <div class=" collapse hide">
+                        <li><a href="">Accueil</a></li>
+                        <li><a href="">ailleurs</a></li>
+                        <li><a href="">ailleurs</a></li>
+                        <li><a href="">ailleurs</a></li>
+                        <li><a href="">ailleurs</a></li>
+                        <li><a href="">ailleurs</a></li>
+                        <li>
+                            <span class="collapsable-item" data-target="#sub-menu2"> Menu déroulant</span>
+                            <ul class="sub-menu hide" id="sub-menu2">
+                               <li><a href="ailleurs.html">Sous-menu</a></li>
+                               <li><a href="ailleurs.html">Sous-menu</a></li>
+                               <li><a href="ailleurs.html">Sous-menu</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
             </nav>
         </div>
     </header>
