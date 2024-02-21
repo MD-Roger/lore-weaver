@@ -293,7 +293,9 @@ fieldset {
 
 }
 
-
+.formRadio input {
+    width: auto;
+}
 
 
  /* Bouton form */
@@ -313,7 +315,7 @@ fieldset button {
     border: solid 2px black;
     border-radius: 30px;
     background-color: white;
-    width: 35vw;
+    width: 40vw;
     height: 5vh;
 
  }
@@ -333,6 +335,8 @@ fieldset button {
 
 
  }
+
+
 
 /* POST */
 
