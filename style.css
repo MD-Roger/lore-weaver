@@ -14,7 +14,21 @@ a {
     text-decoration: none;
 }
 
+main {
+    margin-top: 10vh;
+}
 
+
+
+
+
+/* Heads */
+
+h1 {
+    font-size: 4vh;
+    font-family: 'windlass';
+    text-align: center;
+}
 
 
 /* profil utilisateur */
@@ -61,75 +75,82 @@ a {
 }
 
 
-/* boutons thème + langue + logo */
-/*
-.containerLogo {
+
+/* header */
+
+header {
     display: flex;
-    height: 60%;
-    margin-bottom: 40px;
-    margin-left: 160px;
+    flex-flow: column;
+
+
+
+}
+
+
+
+
+.containerButton {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.containerLogo {
+    width: 50%;
 
 }
 
 #logo {
-    display: flex;
-    width: 20%;
-    height: 50%;
-    
-}
+    width: fit-content;
+    max-width: 100%;
+    max-height: 100%;
 
 
-.buttonHeader {
-    display: flex;
-    justify-content: end;
-    gap: 50px;
-    margin-right: 120px;
-    
-}
-
-.buttonHeader button {
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.buttonHeader img {
-    border-radius: 20px;
-}
-*/
-
-/* jet 2 */
-
-header {
-    display: flex;
-    flex-flow: column wrap;
 
 }
 
-.containerButton {
-    display: flex;
-    flex-flow: column wrap;
-}
+
+
+
 
 .buttonHeader {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 30px;
-    padding-right: 4vh;
+    gap: 21px;
+    padding-right: 1vh;
     padding-bottom: 3vh;
-    padding-top: 4vh;
+    padding-top: 10vh;
 }
 
 #themeButton {
     border-radius: 20px;
     padding: 2vh;
+    height: 22%;
+    margin-right: 2vh;
+    border: 1px solid;
+
 }
 
 .langButton {
-    border-radius: 20px;
+    width: 30%;
+    height: fit-content;
+    
 
+}
+
+
+#flag {
+    width: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.containerLogo a {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -165,6 +186,155 @@ nav {
     margin-left: 120px;
 }
 
+
+
+
+
+
+
+/* FORM */
+
+
+.containerForm {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    
+}
+form   {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border: none;
+    outline: none;
+    width: fit-content;
+    
+
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-bottom: 1vh;
+    width: 60vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+    margin-left: 8vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
+
+.container {
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.containerTitle {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid;
+    margin-left: -1vh;
+}
+
+.title {
+    width: fit-content;
+    padding-bottom: 7vh;
+    padding-top: 6vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+    
+
+}
+
+fieldset {
+    border: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3vh;
+    padding-right: 3vh;;
+    
+}
+
+.containerForm fieldset {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-right: 3vh;
+}
+.containerForm legend {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 8vw;
+
+
+ }
+
+/* btn radio */
+
+
+.formRadio {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4vh;
+    margin-top: 3vh;
+}
+
+.radio {
+    margin-right: 2vh;
+
+}
+
+.formRadio input {
+    width: auto;
+}
+
+
+ /* Bouton form */
+ .btn, .btnRedirection {
+    margin-left: 3vh;
+    text-align: center;
+ }
+ 
+.btnRedirection {
+    margin-top: 2vh;
+}
+
+.btn {
+    margin-bottom: 1vh;
+}
+fieldset button {
+    border: solid 2px black;
+    border-radius: 30px;
+    background-color: white;
+    width: 40vw;
+    height: 5vh;
+
+ }
+
+#connect button {
+    background-color: blueviolet;
+}
+
+#connect{
+    margin-bottom: 4vh;
+    background-color: blueviolet;
+
+ }
+
+#passForgot {
+    border: none;
+
+
+ }
 
 
 
@@ -277,3 +447,60 @@ nav {
     margin-right: 2vh;
 
 }
+
+
+
+/** FOOTER 
+*/
+
+
+.containerCopyright {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+@media screen and (min-width:920px) {
+
+    #logo {
+        size: 50%;
+        
+    }
+
+    .containerLogo {
+        width: 20%;
+
+
+    }
+    #themeButton {
+        border-radius: 20px;
+        padding: 2vh;
+        height: 10%;
+        margin-right: 2vh;
+        border: 1px solid;
+    
+    }
+    input {
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 40vw;
+        margin-bottom: 1vh;
+        padding-bottom: 1vh;
+        margin-left: 2vw;
+    }
+
+    .containerForm legend {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        margin-left: 2vw;
+    
+    
+     }
+     .langButton {
+        margin-left: 30vw;
+        width: 7%;
+
+     }
+        
+        
+    
+    }
