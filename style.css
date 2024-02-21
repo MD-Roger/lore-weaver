@@ -111,6 +111,8 @@ header {
 
 
 
+
+
 .buttonHeader {
     display: flex;
     flex-direction: row;
@@ -131,10 +133,19 @@ header {
 }
 
 .langButton {
+    width: 30%;
     height: fit-content;
-    border-radius: 20px;
+    
 
 }
+
+
+#flag {
+    width: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 .containerLogo a {
     position: absolute;
@@ -212,7 +223,8 @@ input {
     border: 1px solid black;
     border-radius: 30px;
     margin-bottom: 1vh;
-    padding-right: 10vw;
+    width: 60vw;
+    padding-right: 1vw;
     padding-bottom: 1vh;
     margin-left: 8vw;
     padding-top: 1vh;
@@ -287,9 +299,6 @@ fieldset {
  /* Bouton form */
  .btn, .btnRedirection {
     margin-left: 3vh;
-    padding: 1vh;
-    border: 1px solid black;
-    border-radius: 20px;
     text-align: center;
  }
  
@@ -297,9 +306,16 @@ fieldset {
     margin-top: 2vh;
 }
 
-button {
-    border: none;
+.btn {
+    margin-bottom: 1vh;
+}
+fieldset button {
+    border: solid 2px black;
+    border-radius: 30px;
     background-color: white;
+    width: 35vw;
+    height: 5vh;
+
  }
 
 #connect button {
@@ -462,6 +478,7 @@ button {
     input {
         border: 1px solid black;
         border-radius: 30px;
+        width: 40vw;
         margin-bottom: 1vh;
         padding-bottom: 1vh;
         margin-left: 2vw;
@@ -476,5 +493,10 @@ button {
      }
      .langButton {
         margin-left: 30vw;
+        width: 7%;
+
      }
-}
+        
+        
+    
+    }
