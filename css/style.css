@@ -1,10 +1,9 @@
 @font-face {
-    font-family: 'Windlass';
-    src: url('/Projet_perso/Code/fonts/Windlass.ttf');
+    font-family: 'windlass';
+    src: url(/fonts/Windlass.ttf);
 }
 
 * {
-    overflow-y: hidden;
     margin: 0%;
     padding: 0%;
     font-family: 'Roboto', sans-serif;
@@ -16,7 +15,7 @@ a {
 }
 
 main {
-    margin-top: 10vh;
+    margin-top: 3vh;
 }
 
 
@@ -30,6 +29,9 @@ h1 {
     font-family: 'windlass';
     text-align: center;
 }
+h3 {
+    display: none;
+}
 
 
 /* profil utilisateur */
@@ -37,12 +39,12 @@ h1 {
 .list {
     display: flex;
     justify-content: end;
-    margin-right: 15vh;
+    margin-right: 3vw;
 
 }
 
 .profileUser {
-    margin-top: 60px;
+    margin-top: 1vh;
     list-style-type: none;
     display: inline-flex;
     flex-direction: column;
@@ -129,6 +131,7 @@ header {
     padding: 2vh;
     height: 22%;
     margin-right: 2vh;
+
     border: 1px solid;
 
 }
@@ -158,17 +161,50 @@ header {
 
  /* Nav */
 
-
-.nav {
+ .containerNav {
     display: flex;
     flex-direction: row;
+ }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 35vw;
+    padding-top: 1vh;
+
+}
+
+.nav {
+    border-top: #000 1px solid;
+    border-bottom: #000 1px solid;
+    padding-bottom: 8vh;
+    padding-top: 4vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    border-radius: 10px;
+}
+
+#userHam {
+    text-align: end;
 }
 
 .nav ul {
     list-style : none;
+  
 }
 
+.nav li {
+    margin-top: 1vh;
+    
+}
+.collapseHide {
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    display : none;
+}
 
 
 
@@ -328,14 +364,18 @@ fieldset button {
 }
 
 .containerPost {
-    width: 50%;
-    border: 1px solid;
+    width: 80%;
+    height: auto;
+    border-top: 1px solid black;
     text-align: center;
-    border-radius: 50px;
-    box-shadow: 10px 5px 5px gray;
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10vh;
     margin-top: 6vh;
+    padding-left: 1vw;
+    margin-right: 1vw;
+    padding-bottom: 1vh;
+    align-items: center;
 
 
 }
@@ -346,8 +386,8 @@ fieldset button {
 }
 
 .circle { 
-    height: 10px;  
-    width: 10px;
+    height: 2vh;  
+    width: 2vh;
     size-adjust: 50%;
     border: solid 1px;
     background-color: gray; 
@@ -355,28 +395,47 @@ fieldset button {
     display: inline-block;
     margin-top: 17px;
     margin-left: 2vh;
+    margin-right: 2vw;
 }
 
 .textTime {
-    margin-top: 13px;
-    margin-left: 2vh;
+    margin: auto;
 }
 
-.buttonAuteur {
-    margin-left: 20px;
-    border-radius: 20px;
-    box-shadow: #000 1px;
-    padding: 10px;
-}
+
 
 
 
 .post {
     display: flex;
-    margin-top: 60px;
-    margin-bottom: 10px;
+    margin-top: 3vh;
+
+    margin-right: 1vw ;
+
 
 }
+.post a {
+    width: fit-content;
+}
+
+.buttonUser {
+    height: 10vh;
+    
+    
+    
+}
+.buttonAuthor {
+    margin: auto;
+    margin-left: 1vw;
+}
+
+.anchorImage {
+    width: 80%;
+    height: auto;
+    
+    
+}
+
 
 .containerImage {
     padding: 2vh;
@@ -389,6 +448,7 @@ fieldset button {
     padding-left: 2vh;
     padding-right: 2vh;
     font-size: 2vh;
+    margin-bottom: 2vh;
 }
 .previewImage {
     max-height: 512px;
@@ -400,33 +460,56 @@ fieldset button {
     
 }
 
+.containerTitlePost {
+
+
+    width: 100%;
+    text-align: center;
+
+}
+
 
 .titlePost {
+    display: block;
+    text-align: start;
     border: #000 1px solid;
     border-radius: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 6px;
+    width: 98%;
+    height: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-top: 2vh;
+    padding-left: 2vw;
+    margin-bottom: 2vh;
+}
+
+.containerButtonPreview {
+    font-family: 'windlass';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-top: 5px;
     margin-bottom: 5px;
+    width: 100%;
+
+}
+
+.containerButtonPreview div {
+    width: 80%;
+    margin-bottom: 3vh;
 }
 
 .buttonPreview {
-    font-family: 'windlass';
-    display: inline-flex;
-    flex-direction: row;
-    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
     border-radius: 20px;
-    padding-left: 3vh;
-    padding-right: 3vh;
-    margin-right: 3vh;
-    margin-left: 3vh;
-    margin-bottom: 5px;
-    border: 1px solid;
+    width: 80%;
+    padding: 1vh;
 }
 
 .pictoPreview {
-    margin-right: 2vh;
+    width: 25%;
 
 }
 
@@ -482,7 +565,90 @@ fieldset button {
         width: 7%;
 
      }
+
+     .list {
+        display: flex;
+        justify-content: end;
+        margin-right: 20vw;
+    
+    }
+    .containerButtonPreview {
+        font-family: 'windlass';
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 100%;
+        gap: 2vw;
+    
+    }
+    
+    .containerButtonPreview div {
+        display: flex;
+        width: 10vw;
+        margin-bottom: 3vh;
+        justify-content: flex-start;
+
+        
+    }
+    
+    .buttonPreview {
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 10vw;
+        padding: 1vh;
+    }
+    
+    .pictoPreview {
+        width: 20%;
+        height: auto;
+        margin-right: 2vw;
+    
+    }
+    .buttonUser {
+        display: flex;
+        width: 100%;
+        
+    }
+    #responsiveMobile {
+        display: none;
+    }
+
+    #responsive {
+        display: flex;
+        flex-direction: row;
+    }
+    h3 {
+        display: block;
+        margin-right: 1vw;
+    }
+    nav {
+        gap: 2vw;
+        font-size: 1.7vw;
+        font-family: 'windlass';
+
+    }
+
+    #userHam {
+        display: flex;
+        flex-direction: column;
+    }
+    .collapseHide li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #collapseHideMobile {
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+        
+    }
+    .anchorImage {
+        width: 40%;
+        height: auto;
         
         
     
-    }
+}
