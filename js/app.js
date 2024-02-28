@@ -41,17 +41,17 @@ function main() {
     function userHamShow() {
         const hamMenu = document.querySelector(btnUserHamShow.dataset.target)
         hamMenu.classList.toggle("responsiveHide")
-        btnHamShow.classList.toggle("responsiveHide")
-        btnHamHide.classList.toggle("responsiveHide")
-        console.log(btnHamShow.dataset.target)
+        btnUserHamShow.classList.toggle("responsiveHide")
+        btnUserHamHide.classList.toggle("responsiveHide")
+        console.log(btnUserHamShow.dataset.target)
 
     }
 
     function userHamHide() {
         const hamMenu = document.querySelector(btnUserHamHide.dataset.target)
-        hamMenu.classList.add("hresponsiveHide")
-        btnHamShow.classList.remove("responsiveHide")
-        btnHamHide.classList.add("responsiveHide")
+        hamMenu.classList.toggle("responsiveHide")
+        btnUserHamShow.classList.toggle("responsiveHide")
+        btnUserHamHide.classList.toggle("responsiveHide")
     }
 
 }

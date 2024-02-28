@@ -653,7 +653,7 @@ fieldset button {
         display: flex;
         flex-direction: column;
     }
-    .collapseHideUserHam {
+    .collapseUserHam {
         display: flex;
         flex-direction: column;
         gap: 0;
