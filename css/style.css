@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'windlass';
-    src: url(/fonts/Windlass.ttf);
+    src: url(fonts/Windlass.ttf);
 }
 
 * {
@@ -101,6 +101,7 @@ header {
 .containerLogo {
     width: 50%;
 
+
 }
 
 #logo {
@@ -169,8 +170,9 @@ header {
 nav {
     display: flex;
     flex-direction: row;
-    gap: 35vw;
+    gap: 60vw;
     padding-top: 1vh;
+    justify-content: center;
 
 }
 
@@ -468,6 +470,22 @@ fieldset button {
 
 }
 
+.containerTagsPost {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border : #000 1px solid;
+    border-radius : 20px;
+    gap : 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-top: 2vh;
+    padding-left: 1vw;
+    margin-bottom: 2vh;
+    text-align: start;
+    
+}
+
 
 .titlePost {
     display: block;
@@ -524,7 +542,7 @@ fieldset button {
     margin-bottom: 2vh;
 }
 
-@media screen and (min-width:920px) {
+@media screen and (min-width:768px) {
 
     #logo {
         size: 50%;
@@ -561,7 +579,7 @@ fieldset button {
     
      }
      .langButton {
-        margin-left: 30vw;
+        margin-left: 50vw;
         width: 7%;
 
      }
@@ -616,30 +634,37 @@ fieldset button {
     }
 
     #responsive {
-        display: flex;
-        flex-direction: row;
+        display: none;
     }
     h3 {
         display: block;
         margin-right: 1vw;
     }
     nav {
-        gap: 2vw;
+        gap: 4vw;
         font-size: 1.7vw;
         font-family: 'windlass';
+        margin-left: 2vw;
 
     }
+    
 
-    #userHam {
+    #responsiveNavHam {
         display: flex;
         flex-direction: column;
     }
-    .collapseHide li {
+    .collapseHideUserHam {
         display: flex;
         flex-direction: column;
+        gap: 0;
+    }
+    #responsiveUserHam {
+        display: flex;
+        flex-direction: row;
     }
 
-    #collapseHideMobile {
+
+    .collapse {
         display: flex;
         flex-direction: row;
         gap: 3vw;
@@ -651,4 +676,9 @@ fieldset button {
         
         
     
+    }
+
+    .responsiveHide {
+        display: none;
+    }
 }

@@ -1,30 +1,58 @@
 /******************************
  *  Menu Hamburger Miam miam
  ******************************/
+document.addEventListener("DOMContentLoaded", main)
 
-const btnNavShow = document.querySelector(".nav-show")
-const btnNavHide = document.querySelector(".nav-hide")
-const navMenuMobile = document.querySelector(".collapse");
-const navMenu = document.querySelector(".collapse")
+function main() {
 
-btnNavShow.addEventListener("click", afficherNavigation);
-btnNavHide.addEventListener("click", cacherNavigation);
+    const btnHamShow = document.querySelector(".hamShow")
+    const btnUserHamShow = document.querySelector(".userHamShow")
+    const btnHamHide = document.querySelector(".hamHide")
+    const btnUserHamHide = document.querySelector(".userHamHide")
 
-function afficherNavigation() {
-    const navMenu = document.querySelector(btnNavShow.dataset.target);
-    navMenu.classList.remove("hide");
-    btnNavShow.classList.add("hide");
-    btnNavHide.classList.remove("hide");
 
-    console.log(btnNavShow.dataset.target);
+
+    btnHamShow.addEventListener("click", hamShow)
+    btnHamHide.addEventListener("click", hamHide)
+    btnUserHamShow.addEventListener("click", userHamShow)
+    btnUserHamHide.addEventListener("click", userHamHide)
+
+
+    // function show(classModif){
+    //     classModif.classList.add("hide")
+    // }
+
+    function hamShow() {
+        const hamMenu = document.querySelector(btnHamShow.dataset.target)
+        hamMenu.classList.toggle("hide")
+        btnHamShow.classList.toggle("hide")
+        btnHamHide.classList.toggle("hide")
+        console.log(btnHamShow.dataset.target)
+
+    }
+
+    function hamHide() {
+        const hamMenu = document.querySelector(btnHamHide.dataset.target)
+        hamMenu.classList.add("hide")
+        btnHamShow.classList.remove("hide")
+        btnHamHide.classList.add("hide")
+    }
+
+    function userHamShow() {
+        const hamMenu = document.querySelector(btnUserHamShow.dataset.target)
+        hamMenu.classList.toggle("responsiveHide")
+        btnHamShow.classList.toggle("responsiveHide")
+        btnHamHide.classList.toggle("responsiveHide")
+        console.log(btnHamShow.dataset.target)
+
+    }
+
+    function userHamHide() {
+        const hamMenu = document.querySelector(btnUserHamHide.dataset.target)
+        hamMenu.classList.add("hresponsiveHide")
+        btnHamShow.classList.remove("responsiveHide")
+        btnHamHide.classList.add("responsiveHide")
+    }
+
 }
 
-function cacherNavigation() {
-
-    const navMenu = document.querySelector(btnNavHide.dataset.target);
-    navMenu.classList.add("hide");
-    btnNavShow.classList.remove("hide");
-    btnNavHide.classList.add("hide");
-
-    console.log(btnNavHide.dataset.target);
-}
