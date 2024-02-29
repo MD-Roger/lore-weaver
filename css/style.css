@@ -8,6 +8,7 @@
     padding: 0%;
     font-family: 'Roboto', sans-serif;
     font-size: 1.8vh;
+    background-color: white;
 }
 
 a {
@@ -200,6 +201,8 @@ nav {
     margin-top: 1vh;
     
 }
+
+/* burger menu */
 .collapseHide {
     display: flex;
     flex-direction: column;
@@ -209,24 +212,58 @@ nav {
     display : none;
 }
 
+/* burger menu */
+
+
+
+/* Page création*/
+
+.containerCreation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .containerNavMain {
     display: flex;
+    flex-direction: row-reverse;
+    gap: 5vw;
+    margin-top: 3vh;
+    border-top: 1px solid black;
+    border-radius: 10px;
+    padding-top: 3vh;
+}
+
+.containerNavMain button, input {
+    width: 25vw;
+    border-radius: 20px;
+
+}
+.containerNavMain input {
+    width: 60vw;
+    
+
 }
 
 .containerWorld {
+}
+
+.containerTitleWorld {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+    gap: 25vw;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
 
-.containerRowWorld {
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
 }
 
 .rowWorld {
     display: flex;
+    justify-content: center;
+    gap: 10vw;
+
 }
 
 .rowWorld a {
@@ -238,7 +275,8 @@ nav {
 .rowWorld img {
     width: 25vw;
     height: auto;
-    max-width: fit-content;
+    max-width: 25vw;
+    max-height: auto;
 
 }
 
@@ -270,7 +308,7 @@ form   {
 
 }
 
-input {
+.containerForm input {
     border: 1px solid black;
     border-radius: 30px;
     margin-bottom: 1vh;
