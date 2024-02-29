@@ -237,14 +237,19 @@ nav {
 
 .containerNavMain button, input {
     width: 25vw;
+    border: 1px solid black;
     border-radius: 20px;
 
 }
 .containerNavMain input {
     width: 60vw;
+    height: 3vh;
+    padding-left: 1vw;
     
 
 }
+
+
 
 .containerWorld {
 }
@@ -636,7 +641,6 @@ fieldset button {
         border-radius: 30px;
         width: 40vw;
         margin-bottom: 1vh;
-        padding-bottom: 1vh;
         margin-left: 2vw;
     }
 
@@ -748,6 +752,17 @@ fieldset button {
     }
 
     .responsiveHide {
-        display: none;
+        display: inline-block;
+        align-items: center;
+    }
+
+    .containerNavMain {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .containerTitleWorld {
+        gap: 33vw;
+
     }
 }
