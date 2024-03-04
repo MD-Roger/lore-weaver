@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'windlass';
-    src: url(fonts/Windlass.ttf);
+    src: url('/fonts/Windlass.ttf');
 }
 
 * {
@@ -128,7 +128,7 @@ header {
     gap: 21px;
     padding-right: 1vh;
     padding-bottom: 3vh;
-    padding-top: 10vh;
+    padding-top: 3vh;
 }
 
 #themeButton {
@@ -182,7 +182,7 @@ nav {
 .nav {
     border-top: #000 1px solid;
     border-bottom: #000 1px solid;
-    padding-bottom: 8vh;
+    padding-bottom: 4vh;
     margin-left: 3vh;
     margin-right: 3vh;
     border-radius: 10px;
@@ -258,9 +258,10 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 25vw;
+    gap: 7vw;
     margin-bottom: 2vh;
-    margin-top: 1vh;
+    margin-top: 3vh;
+    align-items: center;
 
 }
 
@@ -268,6 +269,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 10vw;
+    align-items: center;
 
 }
 
@@ -284,7 +286,19 @@ nav {
     max-height: auto;
 
 }
+.containerLegend {
+    max-width: 20%;
+    text-align: center;
+    font-family: 'windlass';
+    font-size: 2vh;
+    word-wrap: break-word;
 
+
+
+}
+
+
+/* Fin page création */
 
 /* FORM */
 
@@ -413,6 +427,7 @@ fieldset button {
     height: 5vh;
 
  }
+
 
 #connect button {
     background-color: blueviolet;
@@ -616,7 +631,7 @@ fieldset button {
     margin-bottom: 2vh;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:920px) {
 
     #logo {
         size: 50%;
@@ -762,7 +777,14 @@ fieldset button {
     }
 
     .containerTitleWorld {
-        gap: 33vw;
+        gap: 20vw;
 
+    }
+
+    
+    .form legend {
+        margin-left: 8.5vw;
+
+        
     }
 }
