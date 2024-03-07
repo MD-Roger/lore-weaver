@@ -33,6 +33,12 @@ h1 {
     font-family: 'windlass';
     text-align: center;
 }
+
+h2 {
+    font-size: 2.5vh;
+    font-family: 'windlass';
+    text-align: center;
+}
 h3 {
     display: none;
 }
@@ -44,6 +50,7 @@ h3 {
     display: flex;
     justify-content: end;
     margin-right: 3vw;
+    margin-bottom: 3vh;
 
 }
 
@@ -203,14 +210,7 @@ nav {
 }
 
 /* burger menu */
-.collapseHide {
-    display: flex;
-    flex-direction: column;
-}
 
-.hide {
-    display : none;
-}
 
 /* burger menu */
 
@@ -251,10 +251,9 @@ nav {
 
 
 
-.containerWorld {
-}
 
-.containerTitleWorld {
+
+.containerTitleCreation {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -299,6 +298,148 @@ nav {
 
 
 /* Fin page création */
+
+/* Page World */
+
+.containerGlobal {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.containerWorld {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+.previewWorld {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: rgb(228, 228, 228) 1px solid;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.containerTitleWorld {
+    display: flex;
+    width: 100%;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.previewWorld img {
+    width: 50%;
+}
+
+
+
+.containerRowButtonsWorld {
+    display: flex;
+    gap: 20vw;
+    margin-bottom: 2vh;
+}
+
+.containerRowButtonsWorld button {
+    width: 35vw;
+    height: 4vh;
+    border-radius: 20px;
+}
+
+
+.ulParams {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40%;
+    padding-bottom: 1vh;
+
+    
+
+}
+
+.hamParams button {
+    background-color: white;
+    border: none;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+
+}
+.hamParams {
+    display: flex;
+    justify-content: end;
+}
+
+
+.containerPreview {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: black 1px solid;
+    border-radius: 20px;
+    width: 90%;
+    padding-top: 3vh;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    margin-bottom: 3vh;
+}
+
+.containerRowUsers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15vw;
+    width: 100%;
+}
+
+
+.containerSharedUsers {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-bottom: 5vh;
+    padding-top: 2vh;
+    width: 90%;
+    margin-bottom: 6vh;
+   
+
+}
+.containerRowUsers ul {
+    width:20%;
+    text-align: center;
+    word-wrap: break-word;
+    margin-top: 3vh;
+    
+
+
+
+}
+
+.containerRowUsers img {
+    border-radius: 50px;
+
+}
+
+.usernameShared {
+    text-align: center;
+    word-wrap: break-word;
+}
+
 
 /* FORM */
 
@@ -538,7 +679,7 @@ fieldset button {
 .textPost {
     padding-left: 2vh;
     padding-right: 2vh;
-    font-size: 2vh;
+    font-size: calc(0.5rem + 1.5vw);
     margin-bottom: 2vh;
 }
 .previewImage {
@@ -620,7 +761,14 @@ fieldset button {
 
 }
 
+.collapseHide {
+    display: flex;
+    flex-direction: column;
+}
 
+.hide {
+    display : none;
+}
 
 /** FOOTER 
 */
@@ -676,6 +824,7 @@ fieldset button {
         display: flex;
         justify-content: end;
         margin-right: 20vw;
+
     
     }
     .containerButtonPreview {
@@ -776,7 +925,7 @@ fieldset button {
         flex-direction: row;
     }
 
-    .containerTitleWorld {
+    .containerTitleCreation {
         gap: 20vw;
 
     }
@@ -787,4 +936,25 @@ fieldset button {
 
         
     }
+
+
+    /*Responsive WORLD */
+
+    .containerSharedUsers {
+        width: 60%;
+    }
+
+    .containerRowButtonsWorld button {
+        width: 19vw;
+        height: 6vh;
+        border-radius: 20px;
+    }
+
+    .ulParams {
+        width: 19vw;
+    }
 }
+
+
+
+

@@ -7,12 +7,14 @@ function main() {
 
     const btnHamShow = document.querySelector(".hamShow")
     const btnHamHide = document.querySelector(".hamHide")
+    const btnHamParams = document.getElementById("btnParams")
 
 
 
 
     btnHamShow.addEventListener("click", hamShow)
     btnHamHide.addEventListener("click", hamHide)
+    btnHamParams.addEventListener("click", toggleParams)
 
 
 
@@ -34,6 +36,12 @@ function main() {
         hamMenu.classList.add("hide")
         btnHamShow.classList.remove("hide")
         btnHamHide.classList.add("hide")
+    }
+
+    function toggleParams() {
+        const params = document.getElementById("ulParams")
+        params.classList.add("ulParams");
+        params.classList.toggle("hide");
     }
 
 
