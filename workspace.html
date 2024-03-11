@@ -9,13 +9,17 @@
 </head>
 <body>
     <div class="containerGlobal">
-        <div class="containerHeader">
+        <div class="containerHeaderWorkspace">
             <div class="containerRoot">
                 <h2>TitreRacine</h2>
             </div>
             <div class="rootChanger">
-                <button type="button">currentRacine</button>
-                <ul class=" hide">
+                <button type="button" id="btnRootChanger">currentRacine 
+                    <span id="dropDownShow">&#9776</span>
+                    <span id="dropDownHide" class="hide"> &#9747</span>
+
+                </button>
+                <ul class="hide" id="listRoots" >
                     <li><a href="#">rootNameextremementlongoskourpitiéarrête</a></li>
                     <li><a href="#">rootNameextremementlongoskourpitiéarrête</a></li>
                     <li><a href="#">rootNameextremementlongoskourpitiéarrête</a></li>
@@ -26,19 +30,61 @@
             </div>
         </div>
         <div class="containerMain">
+            
+            <div class="containerTreeTitle">
+                <legend>Barre de recherche</legend>
+                <input type="search" id="searchBar" placeholder="Recherche">
+                
+            </div>
+            <div class="containerSidebar">
+                <button type="button">&#9776</button>
+            </div>
             <div class="containerTree">
-                <textarea name="Searchbar" id="searchBar" cols="40" rows="1"></textarea>
-                <button type="button">Nouvel élément</button>
-                <button type="button">Document</button>
-                <button type="button">Dossier</button>
+                
+                <div class="containerRowBtnWorkspace">
+                    <button type="button" id="btnNewElement">Nouvel élément</button>
+                    <div class="containerNewElement">
+                        <ul class="listNewElement hide" id="listNewElement">
+                            <li><a href="#">Personnage</a></li>
+                            <li><a href="#">Objet</a></li>
+                            <li><a href="#">Organisation</a></li>
+                            <li><a href="#">Déité</a></li>
+                            <li><a href="#">Lieux</a></li>
+                            <li><a href="#">Maladie</a></li>
+                        </ul>
+                    </div>
+                    <button type="button">Document</button>
+                    <button type="button">Dossier</button>
+
+                </div>
+                
                 <div class="containerFilesTree">
                     <ul class="treeCollapse">
-                        <li><a href=""><img src="" alt="">Personnagetrèslong</a></li>
-                        <li><a href=""><img src="" alt="">Personnagetrèslong</a></li>
-                        <li><a href=""><img src="" alt="">Personnagetrèslong</a></li>
-                        <li><a href=""><img src="" alt="">Personnagetrèslong</a></li>
-                        <li><a href=""><img src="" alt="">Personnagetrèslong</a></li>
-                        <li><a href=""><img src="" alt="">Personnagetrèslong</a></li>
+                        <div class="treeElement">
+                            <li><a href=""><p>Personnagetrèslong</p><img src="assets/imASword.jpg" alt=""></a></li>
+
+                        </div>
+                        
+                        <div class="treeElement">
+                            <li><a href=""><p>Personnagetrèslong</p><img src="assets/imASword.jpg" alt=""></a></li>
+
+                        </div>
+                        <div class="treeElement">
+                            <li><a href=""><p>Personnagetrèslong</p><img src="assets/imASword.jpg" alt=""></a></li>
+
+                        </div>
+                        <div class="treeElement">
+                            <li><a href=""><p>Personnagetrèslobfbfdgfdgfdgdfbfdgdfgdfgdfgdfgdfgdfgfdgdfgdgdfgng</p><img src="assets/imASword.jpg" alt=""></a></li>
+
+                        </div>
+                        <div class="treeElement">
+                            <li><a href=""><p>Personnagetrèslong</p><img src="assets/imASword.jpg" alt=""></a></li>
+
+                        </div>
+                        <div class="treeElement">
+                            <li><a href=""><p>Personnagetrèslong</p><img src="assets/imASword.jpg" alt=""></a></li>
+
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -46,6 +92,6 @@
     </div>
     
 
-    <script src="js/app.js"></script>
+    <script src="js/appWorkspace.js"></script>
 </body>
 </html>

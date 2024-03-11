@@ -8,6 +8,7 @@ function main() {
     const btnHamShow = document.querySelector(".hamShow")
     const btnHamHide = document.querySelector(".hamHide")
     const btnHamParams = document.getElementById("btnParams")
+  
 
 
 
@@ -15,6 +16,7 @@ function main() {
     btnHamShow.addEventListener("click", hamShow)
     btnHamHide.addEventListener("click", hamHide)
     btnHamParams.addEventListener("click", toggleParams)
+
 
 
 
@@ -44,6 +46,5 @@ function main() {
         params.classList.toggle("hide");
     }
 
-
+ 
 }
-
