@@ -445,23 +445,9 @@ nav {
 
 
 
-/* SIDEBARE WORKSPACE*/
 
-.containerSidebar {
-    position: fixed;
-    top: 0;
-    right: 92%;
-    height: 100%;
 
-}
 
-.containerSidebar button {
-    position: fixed;
-    top: 50%;
-    width : 10vw;
-    height: 10%;
-
-}
 
 .containerHeaderWorkspace {
     display: flex;
@@ -509,6 +495,7 @@ nav {
     border-radius: 20px;
     padding: 1vh;
     margin-bottom: 2vh;
+    margin-right: 1.5vw;
     text-align: center;
 }
 
@@ -547,7 +534,7 @@ nav {
 .treeElement a {
     display: flex;
     align-items: center;
-    margin-top: 1vh;
+    margin-top: 1.5vh;
    
     
 }
@@ -561,8 +548,6 @@ nav {
 
 
 .containerMain {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     padding-right: 1vw;
     align-items: end;
@@ -582,10 +567,12 @@ nav {
     padding: 2vh;
     min-height: 80vh;
     justify-content: flex-start;
+    margin-left: 25%;
 }
 
 .containerTreeTitle {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 3vh;
 }
 
 #searchBar {
@@ -603,7 +590,7 @@ margin-bottom: 2vh;
 }
 
 .containerRowBtnWorkspace button {
-    width: 26%;
+    width: 40%;
     margin-bottom: 2vh;;
     margin-right: 2.2vw;
 }
@@ -613,7 +600,49 @@ margin-bottom: 2vh;
     justify-content: center;
 }
 
+/* SIDEBAR WORKSPACE*/
 
+.sidebarHidden {
+    margin-left: 99%;
+    
+}
+
+
+.containerSidebar {
+    position: fixed;
+    top: 0;
+    right: 45%;
+    height: 100%;
+
+}
+
+.containerSidebar button {
+    position: fixed;
+    top: 30%;
+    width : 10vw;
+    height: 5vh;
+
+}
+
+.sidebarPressed {
+    position: fixed;
+    top: 0;
+    right: 92%;
+    height: 100%;
+
+}
+
+.sidebarPressed button {
+    position: fixed;
+    top: 50%;
+    width : 10vw;
+    height: 5%;
+    margin-left: 11.5vw;
+
+}
+
+
+/* FIN SIDEBAR */
 
 /* 
 FIN WORKSPACE
@@ -1137,6 +1166,41 @@ fieldset button {
     .ulParams {
         width: 19vw;
     }
+
+    /* Responsive workspace */
+
+    .containerSidebar {
+        position: fixed;
+        top: 0;
+        right: 5%;
+        height: 100%;
+    
+    }
+    
+    .containerSidebar button {
+        position: fixed;
+        top: 30%;
+        width : 5vw;
+        height: 5vh;
+    
+    }
+    
+    .sidebarPressed {
+        position: fixed;
+        top: 0;
+        right: 89.5%;
+        height: 100%;
+    
+    }
+    
+    .sidebarPressed button {
+        position: fixed;
+        top: 50%;
+        width : 5vw;
+        height: 5%;
+    
+    }
+
 }
 
 
