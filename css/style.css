@@ -24,7 +24,10 @@ main {
     margin-top: 3vh;
 }
 
-
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
 
 
 
@@ -529,6 +532,8 @@ nav {
 }
 
 .treeElement {
+    width: 100%;
+
 }
 
 .treeElement a {
@@ -568,6 +573,7 @@ nav {
     min-height: 80vh;
     justify-content: flex-start;
     margin-left: 25%;
+    position: relative;
 }
 
 .containerTreeTitle {
@@ -593,6 +599,7 @@ margin-bottom: 2vh;
     width: 40%;
     margin-bottom: 2vh;;
     margin-right: 2.2vw;
+    border-radius: 20px;
 }
 .containerFilesTree {
     display: flex;
@@ -603,7 +610,10 @@ margin-bottom: 2vh;
 /* SIDEBAR WORKSPACE*/
 
 .sidebarHidden {
-    margin-left: 99%;
+    display: none;
+
+
+   
     
 }
 
@@ -611,7 +621,7 @@ margin-bottom: 2vh;
 .containerSidebar {
     position: fixed;
     top: 0;
-    right: 45%;
+    right: 10%;
     height: 100%;
 
 }
@@ -621,6 +631,8 @@ margin-bottom: 2vh;
     top: 30%;
     width : 10vw;
     height: 5vh;
+    border-radius: 50%;
+    padding-bottom: 0.2vh;
 
 }
 
@@ -634,13 +646,47 @@ margin-bottom: 2vh;
 
 .sidebarPressed button {
     position: fixed;
-    top: 50%;
+    top: 30%;
     width : 10vw;
-    height: 5%;
+    height: 5vh;
     margin-left: 11.5vw;
+    border-radius: 50%;
 
 }
 
+
+/* Folders & inner folders */
+
+.innerFolder {
+    margin-left: 3vw;
+}
+
+.folder {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1px black;
+    border-style: inset;
+}
+
+.buttonFolder {
+    display: flex;
+    border: none;
+    font-size: 3vh;
+    margin-right: 4vw;
+    padding-bottom: 1vh;
+}
+
+.buttonFolder img {
+    max-width: 25%;
+    min-width: 18px;
+    min-height: 18px;
+}
+
+
+
+.folderRetract {
+    display: none;
+}
 
 /* FIN SIDEBAR */
 
@@ -1017,7 +1063,7 @@ fieldset button {
         border-radius: 30px;
         width: 40vw;
         margin-bottom: 1vh;
-        margin-left: 2vw;
+
     }
 
     .containerForm legend {
@@ -1169,36 +1215,52 @@ fieldset button {
 
     /* Responsive workspace */
 
+    .rootChanger button {
+        width: 20vw;
+    
+    }
+
+    .listNewElement {
+        margin-right: 6vw;
+    }
+    
+
     .containerSidebar {
         position: fixed;
         top: 0;
-        right: 5%;
+        right: 3.5%;
         height: 100%;
     
     }
     
     .containerSidebar button {
         position: fixed;
-        top: 30%;
-        width : 5vw;
+        width : 3vw;
         height: 5vh;
+        padding-bottom: 0.4vh;
     
     }
     
     .sidebarPressed {
         position: fixed;
         top: 0;
-        right: 89.5%;
+        right: 88.5%;
         height: 100%;
     
     }
     
     .sidebarPressed button {
         position: fixed;
-        top: 50%;
-        width : 5vw;
-        height: 5%;
+        width : 3vw;
+        height: 5vh;
+        padding-bottom: 0.4vh;
     
+    }
+
+    .containerRowBtnWorkspace button {
+        width: 25%;
+        margin-bottom: 2vh;;
+        margin-right: 2.2vw;
     }
 
 }
