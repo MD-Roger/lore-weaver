@@ -1263,6 +1263,13 @@ fieldset button {
         margin-right: 2.2vw;
     }
 
+
+    /*Modal */
+
+    .modalAdjust {
+        display: none;
+    }
+
 }
 
 
