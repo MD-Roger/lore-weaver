@@ -94,6 +94,25 @@ h3 {
 }
 
 
+/* BOOTSTRAP COMPONENTS */
+
+.modal img  {
+    margin-left: 0!important;
+    max-width: 65px!important;
+    max-height:65px!important;
+    min-height:65px!important;
+    min-width: 65px!important;
+
+}
+
+.btnAdjust {
+    background-image: url(/assets/plus-symbol-button.png);
+    background-repeat: no-repeat;
+    height: 36px;
+    width: 36px;
+    margin-left: 0!important;
+}
+
 
 /* header */
 

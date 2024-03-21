@@ -123,7 +123,7 @@
                         </div>
                         <div class="treeElement">
                             <li>
-                                <div class="modal " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal " id="exampleModalToggle" data-bs-backdrop="static" data-bs-keyboard="false"  aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                                 <div class="modal-dialog modal-dialog-centered modal-lg ">
                                   <div class="modal-content">
                                     <div class="modal-header">
@@ -131,18 +131,25 @@
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body text-center border-bottom border-secondary">
-                                        <button class="btn btn-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Bio & info</button>
-                                        <br class="moadlAjust">
+                                        <div class="border-bottom border-secondary mb-3 pb-3">
+                                            <button class="btn btn-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Bio & info</button>
+                                        <br class="modalAdjust">
                                         <button class="btn btn-secondary bg-white text-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Relations</button>
                                         <button class="btn btn-secondary bg-white text-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Possessions</button>
                                         <button class="btn btn-secondary bg-white text-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Personnalité & santé</button>
-                                        <br>
-                                        <button class="btn btn-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Famille</button>
-                                        <br class="modalAdjust">
-                                        <button class="btn btn-secondary bg-white text-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Religion</button>
-                                        <button class="btn btn-secondary bg-white text-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Monde</button>
-                                        <button class="btn btn-secondary bg-white text-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Organisation</button>
-                                        <br>
+
+                                        </div>
+                                        
+                                        <div class="mt-2">
+                                            <button class="btn btn-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Famille</button>
+                                            <br class="modalAdjust">
+                                            <button class="btn btn-secondary bg-white text-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Religion</button>
+                                            <button class="btn btn-secondary bg-white text-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Monde</button>
+                                            <button class="btn btn-secondary bg-white text-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Organisation</button>
+                                            
+
+                                        </div>
+                                       
                                     </div>
                                     <div class="modal-body d-flex border-bottom border-secondary" style="flex-direction: column;">
                                         <div class="d-flex mt-5 ">
@@ -182,10 +189,171 @@
                                     </div>
                                     <div class="modal-body text-center border-bottom border-secondary">
                                         <h5>Frères et soeurs</h5>
-                                        <div class="container">
-
+                                        <div class="container border border-secondary rounded">
+                                            <div class="mb-3 mt-3 pb-3 pt-4 container border border-secondary d-flex rounded align-items-center" style="flex-direction: column;">
+                                                <div class="d-flex align-items-center" style="flex-direction: column;">
+                                                    <img class=" md-me-5" src="assets/ImAT.jpg" alt="">
+                                                    <button class="btn btn-secondary dropdown-toggle bg-white text-dark h-25 md-ms-5 mt-5" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 0;">
+                                                        Changer de personnage
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Brigitte macron</a></li>
+                                                        <li><a class="dropdown-item" href="#">Marie Antoinette</a></li>
+                                                        <li><a class="dropdown-item" href="#">Jeanne marie</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="d-flex mt-4 w-100" style="flex-direction: column;">
+                                                    <label for="brother-input1" class="form-label">Nom</label>
+                                                    <input type="email" class="form-control w-100" id="brother-input1">
+                                                    <label for="brother-textarea1" class="form-label">Relation avec le personnage</label>
+                                                    <textarea class="form-control w-100" id="brother-textarea1" rows="3"></textarea>
+                                                    <div class="d-flex justify-content-end mt-2">
+                                                        <button type="button" class="btn-close" id="btn-close-brother1" aria-label="Close"></button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="mb-3 mt-3 pb-3 pt-4 container border border-secondary d-flex rounded align-items-center" style="flex-direction: column;">
+                                                <div class="d-flex align-items-center" style="flex-direction: column;">
+                                                    <img class=" md-me-5" src="assets/ImAT.jpg" alt="">
+                                                    <button class="btn btn-secondary dropdown-toggle bg-white text-dark h-25 md-ms-5 mt-5" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 0;">
+                                                        Changer de personnage
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Brigitte macron</a></li>
+                                                        <li><a class="dropdown-item" href="#">Marie Antoinette</a></li>
+                                                        <li><a class="dropdown-item" href="#">Jeanne marie</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="d-flex mt-4 w-100" style="flex-direction: column;">
+                                                    <label for="brother-input1" class="form-label">Nom</label>
+                                                    <input type="email" class="form-control w-100" id="brother-input1">
+                                                    <label for="brother-textarea1" class="form-label">Relation avec le personnage</label>
+                                                    <textarea class="form-control w-100" id="brother-textarea1" rows="3"></textarea>
+                                                    <div class="d-flex justify-content-end mt-2">
+                                                        <button type="button" class="btn-close" id="btn-close-brother1" aria-label="Close"></button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="d-flex align-items-start" id="brother-end1">
+                                                <button class="btn btnAdjust" type="button" id="brother-plus1"></button>
+                                            </div>
+                                            
                                         </div>
-
+                                        
+                                    </div>
+                                    <div class="modal-body text-center border-bottom border-secondary">
+                                        <h5>Cousins</h5>
+                                        <div class="container border border-secondary rounded">
+                                            <div class="mb-3 mt-3 pb-3 pt-4 container border border-secondary d-flex rounded align-items-center" style="flex-direction: column;">
+                                                <div class="d-flex align-items-center" style="flex-direction: column;">
+                                                    <img class=" md-me-5" src="assets/ImAT.jpg" alt="">
+                                                    <button class="btn btn-secondary dropdown-toggle bg-white text-dark h-25 md-ms-5 mt-5" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 0;">
+                                                        Changer de personnage
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Brigitte macron</a></li>
+                                                        <li><a class="dropdown-item" href="#">Marie Antoinette</a></li>
+                                                        <li><a class="dropdown-item" href="#">Jeanne marie</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="d-flex mt-4 w-100" style="flex-direction: column;">
+                                                    <label for="siblings-input1" class="form-label">Nom</label>
+                                                    <input type="email" class="form-control w-100" id="siblings-input1">
+                                                    <label for="siblings-textarea1" class="form-label">Relation avec le personnage</label>
+                                                    <textarea class="form-control w-100" id="siblings-textarea1" rows="3"></textarea>
+                                                    <div class="d-flex justify-content-end mt-2">
+                                                        <button type="button" class="btn-close" id="btn-close-siblings1" aria-label="Close"></button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="mb-3 mt-3 pb-3 pt-4 container border border-secondary d-flex rounded align-items-center" style="flex-direction: column;">
+                                                <div class="d-flex align-items-center" style="flex-direction: column;">
+                                                    <img class=" md-me-5" src="assets/ImAT.jpg" alt="">
+                                                    <button class="btn btn-secondary dropdown-toggle bg-white text-dark h-25 md-ms-5 mt-5" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 0;">
+                                                        Changer de personnage
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Brigitte macron</a></li>
+                                                        <li><a class="dropdown-item" href="#">Marie Antoinette</a></li>
+                                                        <li><a class="dropdown-item" href="#">Jeanne marie</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="d-flex mt-4 w-100" style="flex-direction: column;">
+                                                    <label for="siblings-input1" class="form-label">Nom</label>
+                                                    <input type="email" class="form-control w-100" id="siblings-input1">
+                                                    <label for="siblings-textarea1" class="form-label">Relation avec le personnage</label>
+                                                    <textarea class="form-control w-100" id="siblings-textarea1" rows="3"></textarea>
+                                                    <div class="d-flex justify-content-end mt-2">
+                                                        <button type="button" class="btn-close" id="btn-close-siblings1" aria-label="Close"></button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="d-flex align-items-start" id="siblings-end1">
+                                                <button class="btn btnAdjust" type="button" id="siblings-plus1"></button>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="modal-body text-center border-bottom border-secondary">
+                                        <h5>Oncles & tantes</h5>
+                                        <div class="container border border-secondary rounded">
+                                            <div class="mb-3 mt-3 pb-3 pt-4 container border border-secondary d-flex rounded align-items-center" style="flex-direction: column;">
+                                                <div class="d-flex align-items-center" style="flex-direction: column;">
+                                                    <img class=" md-me-5" src="assets/ImAT.jpg" alt="">
+                                                    <button class="btn btn-secondary dropdown-toggle bg-white text-dark h-25 md-ms-5 mt-5" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 0;">
+                                                        Changer de personnage
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Brigitte macron</a></li>
+                                                        <li><a class="dropdown-item" href="#">Marie Antoinette</a></li>
+                                                        <li><a class="dropdown-item" href="#">Jeanne marie</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="d-flex mt-4 w-100" style="flex-direction: column;">
+                                                    <label for="uncle-input1" class="form-label">Nom</label>
+                                                    <input type="email" class="form-control w-100" id="uncle-input1">
+                                                    <label for="uncle-textarea1" class="form-label">Relation avec le personnage</label>
+                                                    <textarea class="form-control w-100" id="uncle-textarea1" rows="3"></textarea>
+                                                    <div class="d-flex justify-content-end mt-2">
+                                                        <button type="button" class="btn-close" id="btn-close-uncle1" aria-label="Close"></button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="mb-3 mt-3 pb-3 pt-4 container border border-secondary d-flex rounded align-items-center" style="flex-direction: column;">
+                                                <div class="d-flex align-items-center" style="flex-direction: column;">
+                                                    <img class=" md-me-5" src="assets/ImAT.jpg" alt="">
+                                                    <button class="btn btn-secondary dropdown-toggle bg-white text-dark h-25 md-ms-5 mt-5" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 0;">
+                                                        Changer de personnage
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Brigitte macron</a></li>
+                                                        <li><a class="dropdown-item" href="#">Marie Antoinette</a></li>
+                                                        <li><a class="dropdown-item" href="#">Jeanne marie</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="d-flex mt-4 w-100" style="flex-direction: column;">
+                                                    <label for="uncle-input1" class="form-label">Nom</label>
+                                                    <input type="email" class="form-control w-100" id="uncle-input1">
+                                                    <label for="uncle-textarea1" class="form-label">Relation avec le personnage</label>
+                                                    <textarea class="form-control w-100" id="uncle-textarea1" rows="3"></textarea>
+                                                    <div class="d-flex justify-content-end mt-2">
+                                                        <button type="button" class="btn-close" id="btn-close-uncle1" aria-label="Close"></button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="d-flex align-items-start" id="uncle-end1">
+                                                <button class="btn btnAdjust" type="button" id="uncle-plus1"></button>
+                                            </div>
+                                            
+                                        </div>
+                                        
                                     </div>
                                         
                                       
@@ -196,7 +364,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                              <div class="modal fade" id="exampleModalToggle2" data-bs-backdrop="static" data-bs-keyboard="false"  aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                   <div class="modal-content">
                                     <div class="modal-header">
